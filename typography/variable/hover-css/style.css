@@ -1,0 +1,166 @@
+/*
+See the README file for links on CSS animation
+*/
+
+@font-face {
+  font-family: 'Funkis';
+  src: url('../fonts/FunkisMAUDemoGX.ttf');
+
+}
+
+
+/*
+#text {
+  font-family: 'Funkis';
+  font-size: 6em;
+  text-rendering: geometricPrecision;
+  font-variation-settings:'term' 0;
+  text-shadow: 0 0; /* a hack needed to improve rendering 
+}
+
+#hello{
+  font-family: 'Funkis';
+  font-size: 6em;
+  font-variation-settings:'dots' 100;
+}
+
+#good{
+  font-family: 'Funkis';
+  font-size: 6em;
+  font-variation-settings:'wght' 50;
+}
+
+#good:hover {
+  animation-name: weightAnim;
+  animation-duration: 1000ms;
+  animation-delay: 10ms;
+  font-variation-settings:'wght' 100;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+
+}
+
+#hello:hover {
+  animation-name: weightAnim;
+  animation-duration: 1000ms;
+  animation-delay: 10ms;
+  font-variation-settings:'dots' 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+
+}
+
+#text:hover {
+  animation-name: weightAnim;
+  animation-duration: 1000ms;
+  animation-delay: 10ms;
+  font-variation-settings:'term' 100;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+*/
+
+
+/*
+@keyframes weightAnim {
+  0% {
+    font-variation-settings: 'wght' 200;
+  }
+  100% {
+    font-variation-settings: 'wght' 1000;
+  }
+}
+
+#minute:hover {
+  font-variation-settings: 'wdth' 1000;
+  /* 
+  this shows the compressed way of setting a bunch
+  of animation properties
+  
+  animation: widthAnim 400ms alternate ease-in-out;
+}
+
+@keyframes widthAnim {
+  0% {
+    font-variation-settings: 'wdth' 1;
+  }
+  100% {
+    font-variation-settings: 'wdth' 1000;
+  }
+}
+
+#second:hover {
+  animation: weightAndWidthAnim 200ms infinite ease-in-out;
+}
+
+@keyframes weightAndWidthAnim {
+  0% {
+    font-variation-settings: 'wdth' 1, 'wght' 1;
+  }
+  100% {
+    font-variation-settings: 'wdth' 1000, 'wght' 1000;
+  }
+}
+*/
+
+
+
+/*typewriter*/
+
+body {
+  background: #fff;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* DEMO-SPECIFIC STYLES */
+
+
+#textlol {
+  color: #000;
+  font-family: 'Funkis';
+  font-size: 2em;
+  font-variation-settings:'wght' 50;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed*/ 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+
+/* The typing effect*/ 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/*
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+*/
+
+
+/*
+.hidden {
+  display: none;
+}
+
+#hidden {
+  display: none;
+}
+*/
